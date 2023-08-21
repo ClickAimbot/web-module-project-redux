@@ -8,7 +8,7 @@ const Movie = (props) => {
     const { id } = useParams();
     const { push } = useHistory();
 
-    const { movies, displayFavorites, deleteMovie } = props;
+    const { movies, displayFavorites, addFavorite, deleteMovie } = props;
     const movie = movies.find(movie=>movie.id===Number(id));
 
     const handleDeleteClick = () => {
